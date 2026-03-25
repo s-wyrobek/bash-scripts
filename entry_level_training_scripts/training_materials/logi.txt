@@ -1,8 +1,0 @@
-2026-03-18 ERROR connection failed
-2026-03-18 WARNING disk space low
-2026-03-18 INFO server started
-2026-03-18 error timeout
-2026-03-18 WARNING memory high
-2026-03-18 ERROR database down
-2026-03-18 error file not found
-2026-03-18 WARNING cpu high
