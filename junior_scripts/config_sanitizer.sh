@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-trap 'rm -rf configs_sanitized/' ERR
+trap 'rm -rf config_sanitized/' ERR
 
 mkdir -p config_sanitized/ && cp -r configs/ configs_sanitized/
 
-files=$(find ./config_sanitized \( -name '*.conf' -o -name '*.yml' -o -name '*.yaml'\))
+files=$(find ./config_sanitized \( -name '*.conf' -o -name '*.yml' -o -name '*.yaml' -o ! - name '*.bak'\))
 
 
 for files_to_change in $files; do
@@ -16,4 +16,5 @@ for files_to_change in $files; do
     sed -i 's/LOG_LEVEL=debug/LOG_LEVEL=WARN/' "$files_to_change"
 done
 
+find . ! -name '*.bak' 
 
