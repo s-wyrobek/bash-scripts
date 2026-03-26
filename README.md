@@ -7,8 +7,7 @@ Collection of bash scripts written during my DevOps learning journey.
 | Branch | Poziom | Opis |
 |--------|--------|------|
 | [branch-entry-level](https://github.com/s-wyrobek/bash-scripts/tree/branch-entry-level) | Entry | Podstawy bash — operacje na plikach, uprawnienia, przekierowania |
-| [branch-junior-level](https://github.com/s-wyrobek/bash-scripts/tree/branch-junior-level) | Junior+ | Config Sanitizer — sanityzacja plikow konfiguracyjnych z danych wrazliwych |
-
+| [branch-junior-level](https://github.com/s-wyrobek/bash-scripts/tree/branch-junior-level) | Junior+ | Użytkowe skrypty 
 ## Skills practiced
 
 - File operations, permissions, redirections
