@@ -34,7 +34,7 @@ for file in $files_found; do
     api_total=$((api_total + api_count)) #sum api changes
     ip_total=$((ip_total + ip_count)) #sum ip changes
 
-    sed -i -e 's/PASSWORD=.*/PASSWORD=***REDACTED***/gi' \
+    sed -i '' -e 's/PASSWORD=.*/PASSWORD=***REDACTED***/gi' \
            -e 's/sk-[a-zA-Z0-9_-]*/***API_KEY_REDACTED***/gi' \
            -e 's/192\.168\.1\.50/${DB_HOST}/gi' \
            -e 's/APP_ENV=development/APP_ENV=production/gi' \
